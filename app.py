@@ -2,7 +2,7 @@ from openai import OpenAI
 from functions import create_new_thread, add_message, run_thread, get_response
 
 # Hard code assistant ID after assistant creation to set the assistant for the app
-assist_id = "asst_IgOO223FMpfKBoKoWuj1U742"
+assist_id = "asst_RN1c1nQEeCYXPvO6kzEHKKrz"
 
 # Create a new thread for the current conversation
 thread_id = create_new_thread()
