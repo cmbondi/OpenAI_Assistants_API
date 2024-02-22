@@ -67,10 +67,10 @@ def get_response(run, thread_id):
     messages = client.beta.threads.messages.list(
         thread_id=thread_id
     )
-    # Stores citations in a variable from the latest response
-    annotations = messages.data[0].content[0].text.annotations
+
     # Stores the content of the AI response
     message_content = messages.data[0].content[0].text.value
+
     # Returns them
-    return annotations,message_content
+    return message_content
         

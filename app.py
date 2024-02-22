@@ -19,6 +19,6 @@ if __name__ == "__main__":
         # Run the message thread against the assistant
         run = run_thread(assist_id, thread_id)
         # Get the response from the AI along with annotations
-        annotations,message_content = get_response(run,thread_id)
+        message_content = get_response(run,thread_id)
         # Display the AI reply to the user
         print(message_content)
